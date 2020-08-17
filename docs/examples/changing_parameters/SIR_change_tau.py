@@ -37,7 +37,8 @@ times0, S0, I0, R0, infection_time, recovery_time = EoN.fast_SIR(G, tau0, gamma,
 infected, recovered = get_affected_nodes_at_end(infection_time, recovery_time)
 
 
-times1, S1, I1, R1, infection_time, recovery_time = EoN.fast_SIR(G, tau0, gamma, initial_infecteds = infected, initial_recovereds = recovered, tmin = t0, tmax = t1, return_full_data=True)
+times1, S1, I1, R1, infection_time, recovery_time = EoN.fast_SIR(G, tau0, gamma, initial_infecteds = infected, initial_recovereds = recovered, 
+                                                                 tmin = t0, tmax = t1, return_full_data=True)
 
 infected, recovered = get_affected_nodes_at_end(infection_time, recovery_time)
 
@@ -54,7 +55,8 @@ times0, S0, I0, R0, infection_time, recovery_time = EoN.Gillespie_SIR(G, tau0, g
 infected, recovered = get_affected_nodes_at_end(infection_time, recovery_time)
 
 
-times1, S1, I1, R1, infection_time, recovery_time = EoN.Gillespie_SIR(G, tau0, gamma, initial_infecteds = infected, initial_recovereds = recovered, tmin = t0, tmax = t1, return_full_data=True)
+times1, S1, I1, R1, infection_time, recovery_time = EoN.Gillespie_SIR(G, tau0, gamma, initial_infecteds = infected, initial_recovereds = recovered, tmin = t0,
+                                                                      tmax = t1, return_full_data=True)
 
 infected, recovered = get_affected_nodes_at_end(infection_time, recovery_time)
 
